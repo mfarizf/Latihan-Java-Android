@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelNamaDepan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Nama Depan" />
+
+    <EditText
+        android:id="@+id/et_namaDepan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labelNamaDepan"/>
+
+    <TextView
+        android:id="@+id/tv_namaBelakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Belakang"
+        android:layout_below="@+id/et_namaDepan"/>
+
+    <EditText
+        android:id="@+id/et_namaBelakang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_namaBelakang"/>
+
+    <Button
+        android:id="@+id/btn_tampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampil"
+        android:layout_below="@+id/et_namaBelakang"/>
+
+    <TextView
+        android:id="@+id/tv_tampil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_tampil"/>
+
+    <Button
+        android:id="@+id/latLuas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Latihan Luas" />
+    <Button
+        android:id="@+id/latCalcu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/latLuas"
+        android:text="Latihan Calculator" />
+
+</RelativeLayout>
